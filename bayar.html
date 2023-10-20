@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+
+        .container{
+             font-family: 'Montserrat', sans-serif;
+            width: 1024px;
+            margin: 100px auto;
+            padding: 30px;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+
+        .btn-bayar{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            width: 100%;
+            border: 0;
+            font-weight: bold;
+            padding: 10px 15px;
+            background-color: lightcoral;
+        }
+
+        .label{
+            font-size: 24px;
+        }
+
+        .input-method{
+            margin: 10px;
+            font-size: 20px;
+        }
+        
+        
+
+        .card {
+            width: 600px;
+            padding: 20px;
+            margin: 100px auto;
+            box-sizing: border-box;
+        }
+
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        .cta-login {
+            background-color: lightcoral;
+            border: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="title">Pembayaran</h1>
+
+        
+        <form action="detail_pembayaran.php" method="post">
+            
+            <input type="text" name="institutionCode" placeholder="Institution Code">
+            <input type="text" name="brivaNo" placeholder="Nomor Briva">
+            <input type="text" name="custCode" placeholder="Customer Code">
+            <input type="text" name="nama" placeholder="Nama">
+            <input type="text" name="amount" placeholder="Amount">
+            <input type="text" name="keterangan" placeholder="Keterangan">
+            <input type="text" name="expiredDate" placeholder="expiredDate">
+
+            <button href="#" class="btn-bayar">Bayar</button>
+        </form>
+    </div>
+</body>
+</html>

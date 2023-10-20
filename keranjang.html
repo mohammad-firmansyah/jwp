@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang</title>
+
+    <style>
+        .container{
+            width: 1024px;
+            margin: 100px auto;
+        }
+        table{
+            
+            width: 100%;
+            padding: 10px;
+        }
+
+        thead,th{
+            color: white;
+            border: 1px solid black;
+            padding: 10px 20px;
+            background-color: lightcoral;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px 20px;
+        }
+
+        .btn-cta{
+            background: lightblue;
+            padding: 5px 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            
+        }
+
+        .btn-bayar{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            width: 100%;
+            border: 0;
+            font-weight: bold;
+            padding: 10px 15px;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>
+            keranjang Belanja
+        </h1>
+        <table>
+        <thead>
+            <th>No</th>
+            <th>Nama Produk</th>
+            <th>Jumlah</th>
+            <th>harga</th>
+            <th>action</th>
+        </thead>
+        
+        <tr>
+            <td>1</td>
+            <td>Antagin</td>
+            <td>2</td>
+            <td>20.000</td>
+            <td>
+                <a href="#" class="btn-cta">+</a>
+                <a href="#" class="btn-cta">-</a>
+            </td>
+        </tr>
+    </table>
+
+    <p>Total Belanja (Termasuk pajak) : RP. 20.000 </p>
+
+    <button href="#" class="btn-bayar">Bayar</button>
+</div>
+</body>
+</html>
